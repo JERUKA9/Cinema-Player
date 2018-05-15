@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2006-01-19 21:32:45.895.bdsproj,C:\Documents and Settings\_zbylo_\Moje dokumenty\Borland Studio Projects\Project1.bdsproj=D:\projects\cinemaplayer\Player\subtitle_filter\SubtitleFilter.bdsproj</Transaction>
+    <Transaction>2006-01-20 17:56:22.802.pas,D:\projects\cinemaplayer\Player\subtitle_filter\Unit1.pas=D:\projects\cinemaplayer\Player\subtitle_filter\uSubtitleMixer.pas</Transaction>
+    <Transaction>2006-01-20 20:02:50.232.pas,D:\projects\cinemaplayer\Player\subtitle_filter\Unit1.pas=D:\projects\cinemaplayer\Player\subtitle_filter\uSubtitleFilter.pas</Transaction>
+  </Transactions>
+</BorlandProject>
