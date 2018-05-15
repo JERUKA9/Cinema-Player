@@ -1,0 +1,142 @@
+[Compiler]
+A=1
+B=0
+C=1
+D=1
+E=0
+F=0
+G=1
+H=1
+I=1
+J=1
+K=0
+L=1
+M=0
+N=1
+O=1
+P=1
+Q=0
+R=0
+S=0
+T=0
+U=0
+V=1
+W=0
+X=1
+Y=1
+Z=1
+ShowHints=1
+ShowWarnings=1
+UnitAliases=WinTypes=Windows;WinProcs=Windows;DbiTypes=BDE;DbiProcs=BDE;DbiErrs=BDE;
+[Linker]
+MapFile=3
+OutputObjs=0
+ConsoleApp=1
+DebugInfo=0
+RemoteSymbols=0
+MinStackSize=16384
+MaxStackSize=1048576
+ImageBase=4194304
+ExeDescription=
+[Directories]
+OutputDir=.\bin\
+UnitOutputDir=.\units\
+PackageDLLOutputDir=
+PackageDCPOutputDir=.\dcp\
+SearchPath=.\components\units\
+Packages=VCL40;VCLX40;VCLDB40;VCLDBX40;VCLSMP40;QRPT40;TEEUI40;TEEDB40;TEE40;ibevnt40;nmfast40;VCL40;VCLX40;VCLDB40;VCLDBX40;VCLSMP40;QRPT40;TEEUI40;TEEDB40;TEE40;ibevnt40;nmfast40;CPComps_rt
+Conditionals=_debug_; OVERLAY; GRABBER; madExcept; _SAVE_LANG
+DebugSourceDirs=.\components\
+UsePackages=0
+[Parameters]
+RunParams="d:\filmy\nowe\sniper 3.avi"
+HostApplication=
+[Version Info]
+IncludeVerInfo=1
+AutoIncBuild=1
+MajorVer=1
+MinorVer=6
+Release=0
+Build=3612
+Debug=0
+PreRelease=1
+Special=0
+Private=0
+DLL=0
+Locale=1045
+CodePage=1250
+[Version Info Keys]
+CompanyName=ZbyloSoft
+FileDescription=
+FileVersion=1.6.0.3612
+InternalName=
+LegalCopyright=
+LegalTrademarks=
+OriginalFilename=
+ProductName=Cinema Player
+ProductVersion=1.6
+Comments=
+[HistoryLists\hlDebugSourcePath]
+Count=1
+Item0=.\components\
+[HistoryLists\hlConditionals]
+Count=30
+Item0=_debug_; OVERLAY; GRABBER; madExcept; _SAVE_LANG;madExcept
+Item1=_debug; OVERLAY; GRABBER; madExcept; _SAVE_LANG;madExcept
+Item2=_debug_; OVERLAY; GRABBER; madExcept; _SAVE_LANG
+Item3=_debug_; OVERLAY; GRABBER; madExcept; SAVE_LANG
+Item4=_debug_; OVERLAY; GRABBER; madExcept;madExcept
+Item5=_debug_; OVERLAY; GRABBER; madExcept
+Item6=_debug;OVERLAY;GRABBER;madExcept
+Item7=debug;OVERLAY;GRABBER;madExcept
+Item8=_debug;OVERLAY;GRABBER;;madExcept
+Item9=__debug;OVERLAY;GRABBER;
+Item10=__debug;OVERLAY;GRABBER;;madExcept
+Item11=__debug;OVERLAY;GRABBER
+Item12=_debug;OVERLAY;GRABBER
+Item13=___debug;OVERLAY;GRABBER
+Item14=__debug;OVERLAY;GRABBER_
+Item15=_debug;OVERLAY;GRABBER_
+Item16=OVERLAY;GRABBER_;debug
+Item17=OVERLAY;GRABBER_;_debug
+Item18=OVERLAY;GRABBER_;debug_;log_debug_
+Item19=OVERLAY;GRABBER_;debug;log_debug_
+Item20=OVERLAY;GRABBER_;debug_;log_debug
+Item21=OVERLAY;GRABBER;debug_;log_debug_
+Item22=OVERLAY;_GRABBER;debug_;log_debug_
+Item23=GRABBER_;debug_;log_debug_
+Item24=GRABBER;debug_;log_debug_
+Item25=GRABBER_;debug;log_debug_
+Item26=GRABBER_;debug_;log_debug
+Item27=_GRABBER;debug_;log_debug
+Item28=_GRABBER;debug_;
+Item29=_GRABBER;debug_
+[HistoryLists\hlUnitAliases]
+Count=1
+Item0=WinTypes=Windows;WinProcs=Windows;DbiTypes=BDE;DbiProcs=BDE;DbiErrs=BDE;
+[HistoryLists\hlSearchPath]
+Count=3
+Item0=.\components\units\
+Item1=Components
+Item2=D:\delphi\DelphiX\directx8;D:\delphi\DelphiX\TDVDX8_102b\TDVDX8_102b\tdvd_03_12_2000\tdvd\source\d4
+[HistoryLists\hlUnitOutputDirectory]
+Count=1
+Item0=.\units\
+[HistoryLists\hlOutputDirectorry]
+Count=4
+Item0=.\bin\
+Item1=.bin\
+Item2=bin
+Item3=\bin
+[HistoryLists\hlRunParameters]
+Count=7
+Item0="d:\filmy\nowe\sniper 3.avi"
+Item1=/f
+Item2=/min
+Item3="10 Maanam - 'Boskie Buenos'.mp3"
+Item4=10 Maanam - 'Boskie Buenos'.mp3
+Item5=/f "d:\filmy\k-pax\K-pax 1.avi
+Item6=/ff "d:\filmy\k-pax\K-pax 1.avi
+[HistoryLists\hlDCPOutput]
+Count=1
+Item0=.\dcp\
