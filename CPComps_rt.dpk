@@ -1,0 +1,46 @@
+package CPComps_rt;
+
+{$R *.RES}
+{$ALIGN ON}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST ON}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $00400000}
+{$RUNONLY}
+{$IMPLICITBUILD ON}
+{$DEFINE OVERLAY}
+{$DEFINE GRABBER}
+
+requires
+  vcl40,
+  vclsmp40;
+
+contains
+  cp_CinemaEngine in 'cp_CinemaEngine.pas',
+  cp_CustomListBox in 'cp_CustomListBox.pas',
+  cp_dialogs in 'cp_dialogs.pas',
+  cp_DirectShow in 'cp_DirectShow.pas',
+  cp_ListBoxes in 'cp_ListBoxes.pas',
+  cp_TrackBars in 'cp_TrackBars.pas',
+  HTMLParser in 'HTMLParser.pas',
+  cp_graphics in '..\cp_graphics.pas',
+  global_consts in '..\global_consts.pas',
+  subtitles_header in '..\subtitles_header.pas';
+
+end.
