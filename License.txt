@@ -1,0 +1,20 @@
+Umowa licencyjna
+================
+
+1. CinemaPlayer nale¿y do kategorii FREEWARE.
+
+2. Program mo¿ne byæ u¿ywany bez ¿adnych ograniczeñ.
+
+3. Dystrybucja w sieci Internet nie jest ograniczona.
+
+4. Dystrybucja programu na CD-ROMie wymaga mojej zgody.
+
+5. W celu dystrybucji programu proszê o kontakt: info@cinemaplayer.prv.pl
+
+7. Prawa autorskie do programu przys³uguj¹ Zbigniewowi Chwedorukowi.
+
+8. Program dostarczany jest w stanie "w jakim jest". Nie udzielam gwarancji, i¿ oprogramowanie nie zawiera b³edów, ani nie biorê na siebie ¿adnej odpowiedzialnoœci za szkody wynik³e z niew³aœciwego u¿ytkowania.
+
+9. Nie udzielam równie¿ ¿adnej gwarancji w odniesieniu do wspólpracy programu z jakimkolwiek innym zainstalowanym oprogramowaniem lub sprzetem.
+
+© 2001-2004 Zbigniew Chwedoruk

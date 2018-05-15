@@ -1,0 +1,100 @@
+ProgDir = HKEY_CURRENT_USER\Software\Zbylosoft\CinemaPlayer\ProgDir
+
+WindowClassName = "CinemaPlayer_RemoteControl";
+WintowText="Remote";
+
+message = WM_USER + 0x1000;   // 5120 dziesiêtnie
+
+lParam = 0;
+
+wParam =
+0x0000: Play/Pause
+0x0001: Play
+0x0002: Pause
+0x0003: Stop
+0x0004: Back
+0x0005: Step
+0x0006: Large Back
+0x0007: Large Step
+0x0008: Play previous file
+0x0009: Play next file
+0x000a: Play slower
+0x000b: Play faster
+0x000c: Play normal
+
+0x000d: Full screen on/off
+0x000e: Fixed full screen on/off
+0x000f: Return to window
+
+0x0010: Exit (close cinemaplayer)
+0x0011: Minimize
+0x0012: Restore
+
+0x0013: Volume up
+0x0014: Volume down
+0x0015: Mute
+
+0x0016: Playlist on/off
+0x0017: OpenFiles on/off
+0x0018: OpenText on/off
+0x0019: OpenDir on/off
+
+0x001a: Increase subtitles font size
+0x001b: Decrease subtitles font size
+0x001c: Show subtitles on/off
+0x001d: Move subtitles up
+0x001e: Move subtitles down
+0x001f: Subtitles backward
+0x0020: Subtitles forward
+0x0021: Reset subtitles shift
+
+0x0022: PanScan // not implemented yet
+
+0x0023: Toggle Aspect ratio (orginal, window size, 16:9, 4:3)
+0x0024: Decrease video horizontal size (Y-) 
+0x0025: Increase video horizontal size (Y+)
+0x0026: Decrease video vertical size (X-)
+0x0027: Increase video vertical size (X+)
+0x0028: Decrease video size
+0x0029: Increase video size
+
+0x002a: Play slower (in playing state) or Back (in other state)
+0x002b: Play faster (in playing state) or Step (in other state)
+0x002c: Play normal (in playing state) or Play (in other state)
+
+0x002d: Close system after play On/Off
+0x002e: Show current time (OSD)
+
+0x002f: Move video left
+0x0030: Move video right
+0x0031: Move video up
+0x0032: Move video down
+0x0033: Move video left and up
+0x0034: Move video right adn up
+0x0035: Move video left and down
+0x0036: Move video right and down
+0x0037: Center video position
+0x0038: Fit video to window (keep aspect ratio)
+
+0x0039: Set bookmark 1
+0x003a: Set bookmark 2
+0x003b: Set bookmark 3
+0x003c: Set bookmark 4
+0x003d: Set bookmark 5
+0x003e: Set bookmark 6
+0x003f: Set bookmark 7
+0x0040: Set bookmark 8
+0x0041: Set bookmark 9
+0x0042: Set bookmark 10
+0x0043: Goto bookmark 1
+0x0044: Goto bookmark 2
+0x0045: Goto bookmark 3
+0x0046: Goto bookmark 4
+0x0047: Goto bookmark 5
+0x0048: Goto bookmark 6
+0x0049: Goto bookmark 7
+0x004a: Goto bookmark 8
+0x004b: Goto bookmark 9
+0x004c: Goto bookmark 10
+
+0x004d: Speaker On/Off

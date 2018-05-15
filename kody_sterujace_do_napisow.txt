@@ -1,0 +1,75 @@
+Pomimo, ¿e kody steruj¹ce s¹ charakterystyczne dla danego formatu, CinemaPlayer interpretuje je tak w ka¿dym obs³ugiwanym przez siebie formacie napisów. Dziêki temu mo¿esz u¿ywaæ najwygodniejszego dla Ciebie formatu, nie trac¹c dostêpu do ¿adnego z kodów.
+Du¿a litera oznacza, ¿e styl dotyczy ca³ego napisu, natomiast ma³a zmienia styl tylko dla linii w której znajduje siê kod
+Kody mog¹ znajdowaæ siê na pocz¹tku lub na koñcu napisu
+
+
+Format MicroDVD
+- {c:$bbggrr} lub {C:$bbggrr}
+Kolor czcionki 
+
+- {f:fontname} lub {F:fontname}
+nazwa czcionki 
+
+- {s:size} lub {S:size}
+rozmiar czcionki  (wielkoœæ dla pe³nego ekranu, w oknie bêdzie odpowiednio przeskalowana) 
+
+- {h:charset} lub {H:charset} 
+strona kodowa (skrypt) 
+(rozszerzone w stosunku do MicroDVD - brak ograniczenia, ¿e ten kod dotyczy ca³ego pliku)
+ 
+- {y:style} lub {Y:style}
+style = (b - pogrubienie, i - pochylenie lub u - podkreœlenie) dowolna kombinacja tych liter okreœla styl czcionki
+
+- {P:position}
+pozycja napisu na ekranie (0 u góry) lub (1 na dole)
+
+
+
+
+Rozszerznie dodane w SubEdit
+- {b:$bbggrr} lub {B:$bbggrr}
+Kolor t³a pod napisami
+
+
+
+
+
+Format HATAK
+- {x:style} lub {X:style}
+style = (b - pogrubienie, i - pochylenie lub u - podkreœlenie) dzia³a jak kod "Y", ale na zasadzie negacji aktualnego atrybutu (np. jeœli napisy globalnie s¹ ustawione jako pogrubione to literka "b" wy³¹cza ten styl)
+
+- {Q:position}
+"position" to dwie litery:
+	- pierwsza ('l', 'c', 'r') okresla po³o¿enie w poziomie (left, center, right);
+	- druga ('t', 'c', 'b') okresla po³o¿enie w pionie (top center, bottom);
+
+- "/" na pocz¹tku linii
+to samo co {x:i}
+
+- "[" na pocz¹tku linii
+to samo co {b:$000000}
+
+- "[" na pocz¹tku linii oraz "]" na koñcu linii
+to samo co {x:b}
+
+
+
+
+Format MPL3
+- "\" na pocz¹tku linii
+to samo co {x:b}
+
+- "_" na pocz¹tku linii
+to samo co {x:u}
+
+
+
+
+Format HTML
+- tagi "<b></b>", "<i></i>" oraz "<u></u>"
+
+
+
+
+Kody nie obs³ugiwane:
+{o:x,y}

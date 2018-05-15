@@ -1,0 +1,59 @@
+> Czy ktos wie moze jak przechwycic systemowe SC_MONITORPOWER?
+> Konstrukcja 
+> procedure WMSysCommand (var Msg : TWMSysCommand); message WM_SYSCOMMAND;
+> pozwala tylko przechwycic pod warunkiem ze forma jest aktywna.
+> Prosze o pomoc.
+
+Dla zainteresowanych oto odpowiedz
+Trzeba zrobic Hook'a
+
+SetWindowsHookEx(WH_CBT , MonitorHookCallBack, HInstance, 0)
+
+Obsluge zastosowac dla Code = HCBT_SYSCOMMAND 
+
+
+----------------------------------------------------------------------------
+Do symulacji klikniêæ mysz¹ s³u¿y funkcja WinAPI mouse_event: 
+  mouse_event(MOUSEEVENTF_ABSOLUTE or MOUSEEVENTF_LEFTDOWN, x, y, 0, 0);
+  mouse_event(MOUSEEVENTF_ABSOLUTE or MOUSEEVENTF_LEFTUP, x, y, 0, 0);
+
+co daje symulacjê klikniêcia lewym przyciskiem myszy w punkcie (x,y), natomiast do symulacji klawiatury u¿ywamy funkcji keybd_event 
+  keybd_event(VK_UP, 0, 0, 0);
+  keybd_event(VK_UP, 0, KEYEVENTF_KEYUP, 0);
+
+Co powoduje symulacjê klikniêcia klawisza strza³ki w górê. 
+----------------------------------------------------------------------------
+
+
+
+Question/Problem/Abstract:
+
+need to know when the user inserts/extracts a CD? 
+Answer:
+
+
+there's a message you can intercept to know this: 
+WM_DEVICECHANGE 
+
+so... the rest is easy 
+on the private section of your form, declare the function: 
+
+  Private 
+    { Private declarations } 
+    Procedure WMDeviceChange(Var Msg: TMessage); message WM_DEVICECHANGE; 
+
+
+the implement it: 
+
+Procedure TForm1.WMDeviceChange(Var Msg: TMessage); 
+Const 
+  CD_IN = $8000; 
+  CD_OUT = $8004; 
+Begin 
+  Inherited; 
+  Case Msg.wParam Of 
+    CD_IN  : ShowMessage('CD in'); //or do whatever you want!! 
+    CD_OUT  : ShowMessage('CD out') 
+  End 
+ 
+-------------------------------------------------------------------------------

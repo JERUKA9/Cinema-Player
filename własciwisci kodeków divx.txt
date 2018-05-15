@@ -1,0 +1,112 @@
+// ---- for DivX 3.11 Alpha 
+Const CLSID_DivX3Decoder : TGuid = '{82CCD3E0-F71A-11D0-9FE5-00609778AAAA}'; 
+      IID_IDivX3FilterInterface : TGUID = '{598EBA01-B49A-11D2-A1C1-00609778AAAA}'; 
+
+type IDivX3FilterInterface = interface(IUnknown) 
+    ['{598EBA01-B49A-11D2-A1C1-00609778AAAA}'] 
+    // ---- 1 = true, 0 = false 
+    function CanChangeQuality(out Value : integer): HResult; stdcall; 
+    // ---- Range 0..4,Unknown must be set to 0 
+    function Put_Quality(Value,Unknown: integer): HResult; stdcall; 
+    function Get_Quality(out Value: integer): HResult; stdcall; 
+    // ---- Range 0..100,Unknown must be set to 0 
+    function Put_Brightness(Value,Unknown: integer): HResult; stdcall; 
+    function Get_Brightness(out Value: integer): HResult; stdcall; 
+    // ---- Range 0..100,Unknown must be set to 0 
+    function Put_Contrast(Value,Unknown: integer): HResult; stdcall; 
+    function Get_Contrast(out Value: integer): HResult; stdcall; 
+    // ---- Range 0..100,Unknown must be set to 0 
+    function Put_Saturation(Value,Unknown: integer): HResult; stdcall; 
+    function Get_Saturation(out Value: integer): HResult; stdcall; 
+    // ---- Range 0..100,Unknown must be set to 0 
+    function Put_Hue(Value,Unknown: integer): HResult; stdcall; 
+    function Get_Hue(out Value: integer): HResult; stdcall; 
+  end; 
+
+// ---- for MS MPEG4 Decoder 
+Const CLSID_MSMPEG4Decoder : TGuid = '{82CCD3E0-F71A-11D0-9FE5-00609778EA66}'; 
+      IID_IMSMPEG4FilterInterface : TGUID = '{598EBA01-B49A-11D2-A1C1-00609778EA66}'; 
+
+type IMSMPEG4FilterInterface = interface(IUnknown) 
+    ['{598EBA01-B49A-11D2-A1C1-00609778EA66}'] 
+    // ---- 1 = true, 0 = false 
+    function CanChangeQuality(out Value : integer): HResult; stdcall; 
+    // ---- Range 0..4,Unknown must be set to 0 
+    function Put_Quality(Value,Unknown: integer): HResult; stdcall; 
+    function Get_Quality(out Value: integer): HResult; stdcall; 
+    // ---- Range 0..100,Unknown must be set to 0 
+    function Put_Brightness(Value,Unknown: integer): HResult; stdcall; 
+    function Get_Brightness(out Value: integer): HResult; stdcall; 
+    // ---- Range 0..100,Unknown must be set to 0 
+    function Put_Contrast(Value,Unknown: integer): HResult; stdcall; 
+    function Get_Contrast(out Value: integer): HResult; stdcall; 
+    // ---- Range 0..100,Unknown must be set to 0 
+    function Put_Saturation(Value,Unknown: integer): HResult; stdcall; 
+    function Get_Saturation(out Value: integer): HResult; stdcall; 
+    // ---- Range 0..100,Unknown must be set to 0 
+    function Put_Hue(Value,Unknown: integer): HResult; stdcall; 
+    function Get_Hue(out Value: integer): HResult; stdcall; 
+  end; 
+ 
+ 
+ 
+
+--------------------------------------------------------------------------------
+ 
+for divx 5.01 
+
+Code: 
+  // Filter CLSID                                                              
+  CLSID_DIVX    : TGUID = '{78766964-0000-0010-8000-00aa00389b71}'; // divx    
+                                                                              
+  CLSID_DivX_U  : TGUID = '{58564944-0000-0010-8000-00aa00389b71}'; // DIVX    
+                                                                              
+  CLSID_DivX_   : TGUID = '{31787664-0000-0010-8000-00aa00389b71}'; // dvx1    
+  CLSID_DivX__U : TGUID = '{31585644-0000-0010-8000-00aa00389b71}'; // DVX1    
+                                                                              
+  CLSID_dx50    : TGUID = '{30357864-0000-0010-8000-00aa00389b71}'; // dx50    
+  CLSID_DX50_   : TGUID = '{30355844-0000-0010-8000-00aa00389b71}'; // DX50    
+                                                                              
+  CLSID_div6    : TGUID = '{36766964-0000-0010-8000-00aa00389b71}'; // div6    
+  CLSID_DIV6_   : TGUID = '{36564944-0000-0010-8000-00aa00389b71}'; // DIV6    
+                                                                              
+  CLSID_div5    : TGUID = '{35766964-0000-0010-8000-00aa00389b71}'; // div5    
+  CLSID_DIV5_   : TGUID = '{35564944-0000-0010-8000-00aa00389b71}'; // DIV5    
+                                                                              
+  CLSID_div4    : TGUID = '{34766964-0000-0010-8000-00aa00389b71}'; // div4    
+  CLSID_DIV4_   : TGUID = '{34564944-0000-0010-8000-00aa00389b71}'; // DIV4    
+                                                                              
+  CLSID_div3    : TGUID = '{33766964-0000-0010-8000-00aa00389b71}'; // div3    
+  CLSID_DIV3_   : TGUID = '{33564944-0000-0010-8000-00aa00389b71}'; // DIV3    
+
+  CLSID_DIVXCodec           : TGUID = '{78766964-0000-0010-8000-00aa00389b71}'; 
+  IID_IIDivXFilterInterface : TGUID = '{D132EE97-3E38-4030-8B17-59163B30A1F5}'; 
+  CLSID_DivXPropertiesPage  : TGUID = '{310e42a0-f913-11d4-887c-006008dc5c26}'; 
+
+type 
+
+  { Interface to control the Divx Decoder filter. 
+    TODO: discover the last function ... } 
+  IDivXFilterInterface = interface(IUnknown) 
+   ['{D132EE97-3E38-4030-8B17-59163B30A1F5}']                                
+    { OpenDivx } 
+    // current postprocessing level 0..100 
+    function get_PPLevel(out PPLevel: integer): HRESULT; stdcall; 
+    // new postprocessing level 0..100 
+    function put_PPLevel(PPLevel: integer): HRESULT; stdcall;      
+    // Put the default postprocessing = 0 
+    function put_DefaultPPLevel: HRESULT; stdcall; 
+    { DIVX } 
+    function put_MaxDelayAllowed(maxdelayallowed: integer): HRESULT; stdcall; 
+    function put_Brightness(brightness: integer): HRESULT; stdcall; 
+    function put_Contrast(contrast: integer): HRESULT; stdcall; 
+    function put_Saturation(saturation: integer): HRESULT; stdcall; 
+    function get_MaxDelayAllowed(out maxdelayallowed: integer): HRESULT; stdcall; 
+    function get_Brightness(out brightness: integer): HRESULT; stdcall; 
+    function get_Contrast(out contrast: integer): HRESULT; stdcall; 
+    function get_Saturation(out saturation: integer): HRESULT; stdcall; 
+    function put_AspectRatio(x, y: integer): HRESULT; stdcall; 
+    function get_AspectRatio(out x, y: integer): HRESULT; stdcall; 
+  end; 
+ 
+ 
